@@ -5,12 +5,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="shortcut icon" href="favicon_tecport.ico" type="image/x-icon">
-  <title>TecPort - Segurança Premium</title>
+  <title>TecPort - Segurança Eletrônica</title>
+
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;600&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+
   <style>
+    /* mantém seu botão WhatsApp (você já tinha isso inline) */
     .contato-section .whatsapp-btn {
       display: inline-flex;
       align-items: center;
@@ -19,16 +22,16 @@
       background-color: #ffffff;
       color: #111111;
       text-decoration: none;
-      border-radius: 999px;
+      border-radius: 12px;
       font-weight: 600;
-      border: 1px solid rgba(255, 255, 255, 0.4);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
       transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease, color 0.15s ease;
     }
 
     .contato-section .whatsapp-btn:hover {
       transform: translateY(-1px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
       background-color: #25d366;
       color: #ffffff;
     }
@@ -37,13 +40,7 @@
       fill: currentColor;
     }
 
-    .depo-section {
-      text-align: center;
-      padding: 4rem 1.5rem;
-      position: relative;
-      overflow: hidden;
-    }
-
+    /* slider (você já tinha) */
     .depo-slider {
       position: relative;
       max-width: 700px;
@@ -54,7 +51,7 @@
       position: absolute;
       inset: 0;
       opacity: 0;
-      transform: translateX(20px);
+      transform: translateX(16px);
       transition: opacity 0.6s ease, transform 0.6s ease;
     }
 
@@ -77,75 +74,60 @@
     </ul>
   </nav>
 
-  <!-- <section class="hero">
-    <h1>Segurança Eletrônica de Alto Padrão</h1>
-    <p>
-      Proteja seu patrimônio com soluções sofisticadas em câmeras, portões eletrônicos e controle de acesso.<br />
-      Tecnologia exclusiva, atendimento personalizado e qualidade incomparável.
-    </p>
-    <button class="cta-btn" id="btnOrcamento">Solicitar Orçamento</button>
-  </section> -->
-
   <section class="hero">
-    <h1>Segurança Eletrônica de Alto Padrão</h1>
+    <h1>Segurança eletrônica com padrão profissional</h1>
     <p>
-      Proteja seu patrimônio com soluções sofisticadas em câmeras, portões eletrônicos e controle de acesso.<br />
-      Tecnologia exclusiva, atendimento personalizado e qualidade incomparável.
+      Projetos e instalação de CFTV, automação de portões e controle de acesso.<br />
+      Equipamentos homologados, organização na instalação e suporte técnico.
     </p>
 
     <div class="hero-actions">
-      <button class="cta-btn cta-outline" id="btnOrcamento">Solicitar Orçamento</button>
+      <button class="cta-btn cta-primary" id="btnOrcamento">Solicitar orçamento</button>
 
       <a href="portfolio.html" class="cta-btn cta-outline">
-        Ver Portfólio (Vídeos)
+        Ver portfólio
       </a>
     </div>
   </section>
 
-
   <section class="servicos-section" id="servicos">
-    <h2 class="servicos-title">Nossos Serviços Premium</h2>
+    <h2 class="servicos-title">Soluções</h2>
+
     <div class="servicos-cards">
       <article class="servico-card">
-        <img src="security-camera.gif" alt="Câmeras de Segurança" />
-        <h3>Monitoramento VIP</h3>
-        <p>Instalação de câmeras Full HD com alto grau de discrição e integração a sistemas inteligentes de última
-          geração.</p>
+        <img src="security-camera.gif" alt="CFTV e Monitoramento" />
+        <h3>CFTV e Monitoramento</h3>
+        <p>Instalação de câmeras IP/HD, gravação local ou em nuvem e acesso remoto com configuração segura.</p>
       </article>
+
       <article class="servico-card">
-        <img src="gate.gif" alt="Automação de Portão" />
-        <h3>Automação de Portões Exclusiva</h3>
-        <p>Portões eletrônicos com controles biométricos, reconhecimento facial e comandos remotos de altíssima
-          segurança.</p>
+        <img src="gate.gif" alt="Automação de Portões" />
+        <h3>Automação de Portões</h3>
+        <p>Motores, controles e travas com instalação padronizada, foco em segurança e acabamento.</p>
       </article>
+
       <article class="servico-card">
-        <img src="smart-lock.gif" alt="Porteiro Eletrônico" />
-        <h3>Porteiros Eletrônicos Inteligentes</h3>
-        <p>Sistemas de interfone com vídeo HD, fechamento eletrônico e integração total com sistemas domóticos
-          residenciais.</p>
+        <img src="smart-lock.gif" alt="Interfonia e Controle de Acesso" />
+        <h3>Interfonia e Controle de Acesso</h3>
+        <p>Vídeo porteiro, fechaduras e controle de acesso com integração e orientação ao usuário.</p>
       </article>
+
       <article class="servico-card">
-        <img src="protection.gif" alt="Sistema de Alarme" />
-        <h3>Sistema de Alarme</h3>
-        <p>Sistemas de alarme com detecção avançada, integração com câmeras e notificação automática em caso de
-          intrusão.</p>
+        <img src="protection.gif" alt="Alarmes e Sensores" />
+        <h3>Alarmes e Sensores</h3>
+        <p>Detecção de intrusão com sirene, sensores e notificação. Configuração adequada ao ambiente.</p>
       </article>
+
       <article class="servico-card">
-        <img src="firewall.gif" alt="Cerca Eletrônica" />
-        <h3>Cerca Eletrônica</h3>
-        <p>Sistemas de cerca eletrônica com detecção avançada, integração com câmeras e notificação automática em caso de
-          intrusão.</p>
+        <img src="firewall.gif" alt="Cerca Elétrica e Perimetral" />
+        <h3>Cerca Elétrica e Perimetral</h3>
+        <p>Proteção perimetral com instalação técnica, sinalização e integração com alarme/câmeras quando necessário.</p>
       </article>
-      <!-- <article class="servico-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/2925/2925704.png" alt="Porteiro Eletrônico" />
-        <h3>Porteiros Eletrônicos Inteligentes</h3>
-        <p>Sistemas de interfone com vídeo HD, fechamento eletrônico e integração total com sistemas domóticos
-          residenciais.</p>
-      </article> -->
+
       <article class="servico-card">
-        <img src="helpdesk.gif" alt="Suporte VIP" />
-        <h3>Suporte Exclusivo & Consultoria</h3>
-        <p>Atendimento personalizado 24h, consultoria técnica dedicada e manutenção preventiva de alto padrão.</p>
+        <img src="helpdesk.gif" alt="Suporte e Manutenção" />
+        <h3>Suporte e Manutenção</h3>
+        <p>Atendimento para ajustes, ampliação e manutenção preventiva, com orientações e documentação básica.</p>
       </article>
     </div>
   </section>
@@ -156,42 +138,38 @@
     <div class="depo-slider">
       <figure class="depo-item active">
         <blockquote class="depo-text">
-          "Desde o primeiro contato, a TecPort demonstrou um cuidado ímpar. A instalação foi impecável, os sistemas
-          funcionam com perfeição e o suporte é eficiente."
+          "Equipe pontual e organizada. Instalação bem executada e configuração completa do acesso remoto."
         </blockquote>
-        <cite class="depo-nome">Dr. Ricardo Alvarenga – Empresário</cite>
+        <cite class="depo-nome">Cliente – Residencial</cite>
       </figure>
 
       <figure class="depo-item">
         <blockquote class="depo-text">
-          "Equipe extremamente profissional e discreta. Hoje tenho segurança e automação no meu condomínio com total
-          confiança."
+          "Atendimento técnico claro e objetivo. Entregaram o sistema funcionando e orientaram o uso."
         </blockquote>
-        <cite class="depo-nome">Síndica Maria Fernanda – Condomínio Residencial</cite>
+        <cite class="depo-nome">Cliente – Condomínio</cite>
       </figure>
 
       <figure class="depo-item">
         <blockquote class="depo-text">
-          "Projeto sob medida, instalação rápida e suporte sempre disponível. Superou as expectativas em todos os
-          detalhes."
+          "Bom acabamento e suporte após a instalação. Recomendo pelo profissionalismo."
         </blockquote>
-        <cite class="depo-nome">Carlos Lima – Proprietário de loja</cite>
+        <cite class="depo-nome">Cliente – Comércio</cite>
       </figure>
     </div>
   </section>
 
-
   <section class="contato-section" id="contato">
-    <h2>Contato Exclusivo</h2>
+    <h2>Contato</h2>
+
     <a href="https://wa.me/24981805478" class="whatsapp-btn" target="_blank" rel="noopener">
       <span class="whatsapp-icon">
-        <!-- Ícone SVG do WhatsApp -->
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" aria-hidden="true">
           <path
             d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
         </svg>
       </span>
-      <span>Fale com um de nossos representantes</span>
+      <span>Falar no WhatsApp</span>
     </a>
   </section>
 
@@ -206,12 +184,10 @@
       if (!depoItems.length) return;
 
       let current = 0;
-      const tempoTroca = 7000; // 7 segundos
+      const tempoTroca = 7000;
 
       function mostraDepo(indice) {
-        depoItems.forEach((item, i) => {
-          item.classList.toggle('active', i === indice);
-        });
+        depoItems.forEach((item, i) => item.classList.toggle('active', i === indice));
       }
 
       function proximoDepo() {
@@ -222,7 +198,6 @@
       mostraDepo(current);
       setInterval(proximoDepo, tempoTroca);
     });
-
   </script>
 </body>
 
