@@ -197,8 +197,8 @@ nav ul li a.active {
 }
 
 .servico-card img {
-  width: 70px;
-  margin-bottom: 24px;
+  width: 150px;
+  margin-bottom: 2px;
   filter: drop-shadow(0 0 14px var(--dourado));
 }
 
