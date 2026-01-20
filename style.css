@@ -149,7 +149,7 @@ nav ul li a.active {
   color: var(--bege-fundo);
   border-color: var(--dourado);
   box-shadow: 0 0 30px var(--dourado);
-  transform: scale(1.07);
+  /*transform: scale(1.07);*/
 }
 
 /* SERVIÇOS (sem alterações) */
