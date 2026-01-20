@@ -64,15 +64,37 @@
 </head>
 
 <body>
-  <nav>
-    <div class="logo">TecPort Segurança</div>
+  <!-- <nav>
+    <div class="logo"><img src="img/logo_tecport.png" alt="logo tecport" width="30"> TecPort Segurança</div>
     <ul>
       <li><a href="#servicos" class="active">Serviços</a></li>
       <li><a href="portfolio.html">Portfólio</a></li>
       <li><a href="#depo">Depoimentos</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
-  </nav>
+  </nav> -->
+  <nav class="navbar">
+  <div class="logo">
+    <img src="img/logo_tecport.png" alt="logo tecport" width="30">
+    TecPort Segurança
+  </div>
+
+  <!-- Botão Hambúrguer (aparece no celular) -->
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Menu -->
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#servicos" class="active">Serviços</a></li>
+    <li><a href="portfolio.html">Portfólio</a></li>
+    <li><a href="#depo">Depoimentos</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+</nav>
+
 
   <section class="hero">
     <h1>Segurança eletrônica com padrão profissional</h1>
@@ -224,7 +246,7 @@
           <span>X</span>
         </a>
 
-        <a href="#" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp">
+        <a href="https://wa.me/24981805478" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp">
           <!-- WhatsApp -->
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path
@@ -247,6 +269,7 @@
 
 
   <script src="script.js"></script>
+  <script src="menu.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const depoItems = document.querySelectorAll('.depo-item');

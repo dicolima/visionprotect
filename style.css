@@ -650,3 +650,106 @@ nav .logo{
   }
 }
 
+/* ===========================
+   MENU HAMBÚRGUER (MOBILE)
+   =========================== */
+
+.navbar{
+  position: fixed;
+  top: 0; left: 0; width: 100%;
+  z-index: 100;
+}
+
+/* Botão hamburguer */
+.nav-toggle{
+  display: none;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background 0.2s ease;
+}
+
+.nav-toggle:hover{
+  background: rgba(0,0,0,0.06);
+}
+
+.nav-toggle span{
+  display: block;
+  height: 2px;
+  width: 22px;
+  background: var(--cinza-escuro);
+  margin: 5px auto;
+  border-radius: 999px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+/* MOBILE */
+@media (max-width: 820px){
+  nav{
+    padding: 14px 18px !important;
+  }
+
+  nav ul{
+    gap: 0 !important;
+  }
+
+  /* Mostra o botão */
+  .nav-toggle{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Esconde menu padrão */
+  .nav-links{
+    position: absolute;
+    top: 72px;
+    left: 18px;
+    right: 18px;
+
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+
+    background: rgba(255,255,255,0.92);
+    border: 1px solid rgba(183, 147, 90, 0.25);
+    border-radius: 16px;
+    padding: 14px;
+
+    backdrop-filter: blur(16px);
+    box-shadow: 0 18px 45px rgba(0,0,0,0.12);
+  }
+
+  /* Quando abrir */
+  .nav-links.open{
+    display: flex;
+  }
+
+  .nav-links li a{
+    display: block;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border-bottom: none !important;
+  }
+
+  .nav-links li a:hover{
+    background: rgba(183,147,90,0.10);
+  }
+
+  /* Animação do botão quando aberto (vira X) */
+  .nav-toggle.open span:nth-child(1){
+    transform: translateY(7px) rotate(45deg);
+  }
+  .nav-toggle.open span:nth-child(2){
+    opacity: 0;
+  }
+  .nav-toggle.open span:nth-child(3){
+    transform: translateY(-7px) rotate(-45deg);
+  }
+}
+
+
